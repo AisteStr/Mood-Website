@@ -1,0 +1,35 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.container {
+    background-color: rgb(244, 235, 229);
+    padding: 15px;
+    border: 2px double rgba(74, 71, 71, 0.755);
+    border-radius: 5px;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.3)
+}
+
+h1 {
+    text-align: center;
+}
+
+.input-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px
+}
+
+#mood-input {
+    flex: 1;
+    width: 200px
+}
+
+.emoji-btn.selected {
+    border: 2px solid #333;
+    background-color: #eee;
+    border-radius: 5px;
+}
