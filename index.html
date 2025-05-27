@@ -8,10 +8,11 @@
 </head>
 
 <body>
-    <div class="container">
-        <h1> Your mood tracker </h1>
-        <div class="input-section">
 
+    <div class="container">
+        <h1>Your mood log</h1>
+        <div class="left-box">
+            <h2>How are you feeling today?</h2>
             <button class="emoji-btn"> 😁 </button>
             <button class="emoji-btn"> 😌 </button>
             <button class="emoji-btn"> ☹️ </button>
@@ -19,16 +20,11 @@
 
             <input type="text" id="mood-input" placeholder="Input your mood notes here">
             <button id="add-mood-btn"> Add your mood and notes </button>
-
         </div>
-
-        <div class="mood-logs">
-            <p>Your previous mood logs:</p>
+        <div class="right-box">
+            <h2>Your Past Moods</h2>
             <ul id="mood-list"></ul>
         </div>
+        <script src="script.js"></script>
     </div>
-
-    <script src="script.js"></script>
 </body>
-
-</html>

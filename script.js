@@ -25,14 +25,23 @@ function handleAddMood() {
     selectedEmoji = "";
 }
 
+
 function addMood(text) {
     const li = document.createElement("li");
     li.className = "mood-item";
 
     const today = new Date();
-    const dateString = today.toISOString().split('T')[0];
+    const dateString = today.toLocaleDateString("en-US", {
+        year: "numeric",
+        month: "long",
+        day: "numeric"
+    });
 
-    li.innerHTML = `<span>${selectedEmoji} ${text} ${dateString}</span>`;
+    li.innerHTML = `
+        <span style="font-size: 2rem;">${selectedEmoji}</span>
+        <div>${text}</div>
+        <small style="color: gray;">${dateString}</small>
+    `;
 
     moodList.appendChild(li);
 }
