@@ -8,12 +8,7 @@ A simple mood tracker built with HTML, CSS and JavaScript. It logs how the user 
 # Features
 
 - Track daily moods
-- hoose between multiple emotions (happy, sad, angry, etc.)
-- Adds the current date with each mood input 
-
-# Possible Improvements
-
-- Add local storage
-- Improve the UI
-
-
+- Choose between multiple emotions (happy, sad, angry, etc.)
+- Adds the current date with each mood input
+- Moods stay in local storage
+- Possibility to delete all stored moods
